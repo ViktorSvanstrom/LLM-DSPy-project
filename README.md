@@ -1,2 +1,3 @@
 # LLM-DSPy-project
-1
+
+- Project that take use of DSPy to algorithmically optimizing LM prompts and weights.
