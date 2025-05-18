@@ -13,5 +13,6 @@ local_lm = dspy.LM("ollama_chat/llama3.2", api_base="http://localhost:11434", ap
 dspy.configure(lm=local_lm)
 
 
+
 if __name__ == "__main__":
     pass
