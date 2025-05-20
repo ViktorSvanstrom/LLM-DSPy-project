@@ -1,0 +1,57 @@
+{
+  "respond.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "I'm concerned about my boyfriend. I suffer from anxiety, but I always have this feeling he wants to hurt me because he told me he was interested in BDSM intercourse. We haven't tried it, but I've had this feeling he always wants to.",
+        "reasoning": "It's important to address concerns about safety and boundaries in any relationship, especially when it comes to interests like BDSM, which involves trust and clear communication. Your anxiety may be amplifying your fears about your boyfriend's intentions. It's crucial to have open discussions about desires, boundaries, and consent in a relationship, especially with BDSM, to ensure both partners feel safe and respected. Feeling apprehensive about your boyfriend's interests is valid, and understanding where those feelings stem from can help clarify the situation.",
+        "response": "It's completely understandable to feel concerned about your boyfriend's interest in BDSM, especially given your anxiety. The key here is communication. It's important to have an open and honest conversation with him about your feelings and boundaries regarding BDSM. Express your concerns and listen to his perspective; this can help clarify his intentions and make you feel more secure. Remember, any exploration of BDSM should be consensual and safe for both partners. If you still feel uncomfortable after discussing it, heed your instincts. Your feelings are important, and it's essential to prioritize your emotional safety and well-being in the relationship."
+      },
+      {
+        "augmented": true,
+        "question": "I was raped by multiple men, and now I can't stand the sight of myself. I wear lingerie to get my self excited enough to have sex with my wife.",
+        "reasoning": "The individual expresses deep emotional trauma stemming from previous assaults, which has resulted in a negative self-image and difficulty in sexual intimacy with their wife. Wearing lingerie could be a coping mechanism or a way to reconnect with sensuality, but the underlying trauma needs to be addressed for genuine healing and intimacy in the relationship.",
+        "response": "I\u2019m truly sorry to hear about your experiences. It\u2019s completely understandable to have complicated feelings about your body and intimacy after such trauma. First and foremost, it's important to acknowledge that what you went through is not your fault and that your feelings are valid. Seeking professional help, such as therapy, can be incredibly beneficial. A therapist can help you work through your trauma, improving your self-image and making intimacy with your wife feel safe and enjoyable again. Additionally, it's great that you and your wife are exploring ways to enhance your sexual connection. Open communication with her about your feelings and experiences can strengthen your bond and provide a foundation for healing together. Remember, healing is a journey, and it\u2019s okay to take your time."
+      },
+      {
+        "augmented": true,
+        "question": "My mother is combative with me when I say I don't want to talk with her about my depression.    She hasn't been supportive of me in the past and she isn't someone that I feel comfortable opening up to. She constantly tries to instigate conversations where she asks me questions that I don't want to or can't answer. I tell her I don't want to talk and she starts arguments with me.    How can I get her to understand?",
+        "reasoning": "It sounds like you are in a difficult situation with your mother, where your desire for privacy and boundaries regarding your mental health is clashing with her need to connect or understand. Her combative responses to your boundaries indicate a lack of respect for your feelings, which can be deeply frustrating, especially when you are dealing with depression. To facilitate understanding, it may require a combination of clear communication, setting firm boundaries, and possibly providing education about mental health.",
+        "response": "It can be incredibly challenging to navigate this type of relationship, especially when you're dealing with your own mental health struggles. One approach is to have a calm conversation with your mother when you aren\u2019t feeling under pressure. Explain gently that your depression is a personal matter and that discussing it can be difficult for you. Emphasize that it's not about her, but rather your own process. You could suggest alternative ways for her to support you, like just being there to listen without asking questions. Use \"I\" statements to express how you feel, such as \"I feel overwhelmed when I am questioned about my feelings,\" which might help to minimize defensiveness on her part. If she continues to instigate conversations despite your boundaries, it may be necessary to reinforce those boundaries by stating clearly that you will not engage in those conversations and need her to respect that. Ultimately, remember that your mental well-being is a priority, and it's okay to maintain space when you need it."
+      },
+      {
+        "augmented": true,
+        "question": "I feel that I need to end my present relationship. He lives three hours away and likes the reassurance of having someone to talk to multiple times per day and seeing me once or twice a month.  I want someone who is more present and more of a life companion.\nLately, he has had a very busy work schedule and I have only seen him a few times in the last 6 weeks. I told him that I can't continue in this way because I constantly feel frustrated and angry and that he is not making the relationship enough of a priority. I also feel it is keeping me from possibly finding the relationship I want.\nWe have been together 7 years. The problem is that I panic and experience anxiety and depression thinking of him with someone else and then thinking I will never meet someone I like. We have gone through this cycle already 4-5 times and I feel it is unhealthy to stay in it, but my aversion to the anxiety and depression I experience upon separation always leads me to reconcile.",
+        "reasoning": "It seems that you are experiencing a conflict between your needs in a relationship and your emotional attachment to your current partner. You've recognized that the long-distance aspect and lack of prioritization from him are significant issues that contribute to your frustration and feelings of being unfulfilled. The cycle of breaking up and reconciling demonstrates the difficulty of letting go, amplified by anxiety and depression related to the thought of him being with someone else or the fear of not finding someone new. Understanding the patterns of your emotions and the impact of this relationship on your mental health is crucial. Acknowledging that staying in this situation may be hindering your potential to find a more suitable partner and prioritize your own well-being is an important realization.",
+        "response": "It's clear that you've been doing some deep introspection about your relationship and your emotional needs. Ending a long-term relationship can be incredibly challenging, especially when feelings of anxiety and depression surround the thought of separation. However, it's essential to prioritize your own mental health and happiness. Finding someone who can be more present and align with your desire for a life companion is valid. While it's natural to feel fearful about the future and what it holds, you deserve a relationship that offers fulfillment and companionship. It might help to seek support from friends, family, or a therapist as you navigate this decision. Talking through your fears and concerns can provide clarity and help you cope with the emotions that arise during this transition. Ultimately, it\u2019s important to recognize that while the short-term pain of ending this relationship may be daunting, it could open up new possibilities for your happiness in the long run."
+      }
+    ],
+    "signature": {
+      "instructions": "You are an empathetic assistant, trained in Cognitive Behavioral Tactics. A user will present you with a personal question or concern, often involving emotional or psychological issues. Your task is to understand the context and nuances of the user's question, and then generate a response that is not only accurate but also sensitive to the user's concerns. You should provide a thoughtful, reasoned response that offers guidance and support, while also explaining the reasoning behind your response to provide insight into your thought process. Remember to maintain context and continuity in the conversation, and always respond with empathy and understanding.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "Questions asked by the user"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Response:",
+          "description": "Response to the question"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "2.6.23",
+      "cloudpickle": "3.1"
+    }
+  }
+}
