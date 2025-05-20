@@ -76,7 +76,41 @@ class Model(dspy.Module):
 Tool_calling_LLM = Model()
 
 
+corpus = []
 
+folder_path = "./company_map"
+
+for filename in os.listdir(folder_path):
+    file_path = os.path.join(folder_path, filename)
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            text = f.read().strip()  # Remove any leading/trailing whitespace
+            if text:  # Only add non-empty strings
+                corpus.append(str(text))  # Ensure it's a string
+    except Exception as e:
+        print(f"Error reading file {filename}: {str(e)}")
+
+topk_docs_to_retrieve = 1
+
+embedder = dspy.Embedder('openai/text-embedding-3-small', dimensions=512)
+search = dspy.retrievers.Embeddings(embedder=embedder, corpus=corpus, k=topk_docs_to_retrieve)
+
+class RAG(dspy.Signature):
+    context: str = dspy.InputField(desc="Context provided to help answer the question")
+    question: str = dspy.InputField(desc="Questions asked by the user")
+    response: str = dspy.OutputField(desc="Response to the question")
+
+class Model(dspy.Module):
+    def __init__(self):
+        super().__init__()
+        self.retrive = dspy.Retrieve(k=5)
+        self.respond = dspy.ChainOfThought(RAG)
+
+    def forward(self, question: str):
+        context = search(question).passages
+        return self.respond(context=context, question=question)
+    
+rag = Model()
 
 
 # Sidebar navigation
@@ -118,11 +152,12 @@ def display_chat_interface():
             elif page == "Tool Calling LLM":
                 response = Tool_calling_LLM(question=prompt)
                 st.write(response.response)
-            else:
-                st.write("This LLM is not yet implemented.")
+            elif page == "RAG LLM":
+                response = rag(question=prompt)
+                st.write(response.response)
 
         # Add assistant response to chat history
-        st.session_state.messages.append({"role": "assistant", "content": response.response if page in ["Therapy LLM", "RAG LLM"] else "This LLM is not yet implemented."})
+        st.session_state.messages.append({"role": "assistant", "content": response.response})
 
 
 # Main content area
@@ -132,7 +167,7 @@ if page == "Therapy LLM":
     display_chat_interface()
 elif page == "RAG LLM":
     st.title("📚 RAG LLM")
-    st.write("Welcome to the RAG LLM. This feature is coming soon!")
+    st.write("Welcome to the RAG LLM. I can retrieve information about the made up company NordicTech Solutions.")
     display_chat_interface()
 else:  # Tool Calling LLM
     st.title("🛠️ Tool Calling LLM")
