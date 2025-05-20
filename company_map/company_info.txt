@@ -1,0 +1,23 @@
+Company Information
+Company Name: NordicTech Solutions
+Founded: January 2025
+Founders:
+Anna Eriksson, CEO – An inspiring leader with a Master’s degree in Computer Science from KTH Royal Institute of Technology. Anna brings over a decade of experience as a product manager at one of the Nordics’ leading tech companies, where she successfully launched multiple SaaS products that reshaped the market. Her passion for making technology accessible drives the company’s customer-centric strategy.
+Johan Lind, CTO – A recognized authority in machine learning with a Ph.D. in Artificial Intelligence from Uppsala University. Johan has published numerous academic papers on AI-driven automation and previously developed algorithms for global tech giants. His technical vision ensures NordicTech Solutions remains at the forefront of innovation.
+Maria Nilsson, CFO – With over 15 years of experience in financial strategy and growth within tech startups, Maria is a key figure in securing the company’s financial stability. Her expertise in fundraising and budget planning has been instrumental in NordicTech’s successful funding rounds.
+Headquarters: Kungsgatan 12, 111 52 Stockholm, Sweden
+Business Operations: Development of AI-driven tools for business process automation, with a focus on small and medium-sized enterprises.
+Number of Employees: 60 (as of October 2025), including:
+40 highly skilled software developers and AI specialists, many with advanced academic backgrounds from top-tier universities.
+10 dedicated sales and marketing professionals, specializing in building strong customer relationships.
+5 customer support representatives offering personalized service in Nordic languages.
+5 administrative staff ensuring smooth day-to-day operations.
+Industry: Artificial Intelligence and Software Development
+Main Product: AI-Workflow, a cloud-based SaaS platform designed to optimize workflows in areas such as logistics, customer service, and finance. The platform leverages advanced machine learning algorithms to analyze data in real time, identify inefficiencies, and suggest improvements that save time and resources.
+Vision: To democratize access to advanced AI by providing affordable, user-friendly, and scalable solutions that empower businesses worldwide to maximize efficiency and competitiveness.
+Mission: To revolutionize how businesses manage their processes by delivering tailored, AI-driven solutions that are easy to implement and deliver measurable results.
+Website: www.nordictechsolutions.se
+Contact:
+Email: info@nordictechsolutions.se
+Phone: +46 8 123 456 78
+Address: Kungsgatan 12, 111 52 Stockholm, Sweden

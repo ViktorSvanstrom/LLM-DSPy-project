@@ -1,0 +1,12 @@
+Competitors
+NordicTech Solutions operates in a competitive industry but has identified several competitive advantages:
+Global Players:
+UiPath: A global leader in robotic process automation (RPA), but their solutions are often costly and complex for smaller businesses.
+Automation Anywhere: Focused on large-scale enterprises, making their products less suitable for SMEs.
+Local Players:
+AIStart Sweden: A smaller competitor focused on AI for startups but with limited scalability.
+FlowTech: Offers similar solutions but lacks NordicTech’s emphasis on user-friendliness and local support.
+Competitive Advantages:
+User-Friendly Design: AI-Workflow is intuitive and requires minimal technical expertise to implement.
+Affordability: Solutions are tailored for SMEs with constrained budgets.
+Local Support: Customer support in Nordic languages and a deep understanding of regional business needs.
