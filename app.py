@@ -4,13 +4,22 @@ from pathlib import Path
 import dspy
 import streamlit as st
 from dotenv import load_dotenv
+
+# Streamlit app configuration - must be the first Streamlit command
+st.set_page_config(page_title="LLM Assistant", page_icon="🤖", layout="wide")
+
 # Load environment variables
 load_dotenv()
 
-# Initialize the language model
-lm = dspy.LM("openai/gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"), temperature=1)
-dspy.configure(lm=lm)
+@st.cache_resource
+def initialize_dspy():
+    # Initialize the language model
+    lm = dspy.LM("openai/gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"), temperature=1)
+    dspy.configure(lm=lm)
+    return lm
 
+# Initialize DSPy
+lm = initialize_dspy()
 
 # Create the program
 class Chat(dspy.Signature):
@@ -32,9 +41,6 @@ class Model(dspy.Module):
 # Initialize the Therapy LLM
 therapy_LLM = Model()
 therapy_LLM.load("./dspy_programs/counseling_program.json")
-
-# Streamlit app configuration
-st.set_page_config(page_title="LLM Assistant", page_icon="🤖", layout="wide")
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
