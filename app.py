@@ -162,11 +162,11 @@ def display_chat_interface():
 
 # Main content area
 if page == "Therapy LLM":
-    st.title("🧠 Therapy LLM")
+    st.title("🧠 Domain specific Therapy LLM")
     st.write("Welcome to the Therapy LLM. I'm here to help you with your emotional well-being.")
     display_chat_interface()
 elif page == "RAG LLM":
-    st.title("📚 RAG LLM")
+    st.title("📚 Company specific RAG LLM")
     st.write("Welcome to the RAG LLM. I can retrieve information about the made up company NordicTech Solutions.")
     display_chat_interface()
 else:  # Tool Calling LLM
